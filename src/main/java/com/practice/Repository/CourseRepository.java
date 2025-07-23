@@ -44,7 +44,7 @@ public class CourseRepository {
 		
 	}
 	
-	//view all registrations
+	//View all
 	public void viewall(Scanner sc) {
 		
 		SessionFactory factory = HibernateUtility.getSessionFactory();
