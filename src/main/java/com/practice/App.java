@@ -4,8 +4,7 @@ import java.util.Scanner;
 
 import com.practice.Repository.CourseRepository;
 import com.practice.Utility.HibernateUtility;
-
-//Main class using switch case for showing menu 
+//main class using switch
 public class App 
 {
     public static void main( String[] args )
