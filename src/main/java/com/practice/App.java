@@ -1,5 +1,6 @@
 package com.practice;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 import com.practice.Repository.CourseRepository;
@@ -23,7 +24,15 @@ public class App
     		System.out.println("4.Delete registration by id : ");
     		System.out.println("5.Exit ");
     	
-    		int choice = sc.nextInt();
+    		//int choice = sc.nextInt();
+    		int choice;
+    	    try {
+    	        choice = sc.nextInt();
+    	    } catch (InputMismatchException e) {
+    	        System.out.println("Plz enter valid input !! Only Numbers");
+    	        sc.nextLine(); // Clear the buffer
+    	        continue;
+    	    }
     		switch(choice) {
     			
     		case 1:
